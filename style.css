@@ -1,0 +1,379 @@
+/*Page Tabs*/
+	ul.tabs {
+		margin: 0;
+		padding: 0;
+		float: left;
+		list-style: none;
+		border-bottom: 1px solid #373737;
+		border-left: 1px solid #999999;
+		width: 100%;
+		background-color: #373737;
+	
+
+	}
+	ul.tabs li {
+		float: left;
+		cursor: pointer;
+		height: 31px;
+		line-height: 31px;
+		font-weight: bold;
+		overflow: hidden;
+		position: relative;
+  		background: #D1D1D1;
+  		display: inline-block;
+  		border-bottom-left-radius: 6px;
+  		border-bottom-right-radius: 6px;
+  		margin: 0 -5px;
+ 		padding: 0 30px;
+ 		user-select: none; /*Text cant be highlighted*/
+ 
+	}
+
+	ul.tabs li:hover {
+		background: #909090;
+	}	
+	ul.tabs li.active{
+		border: 1px solid black;
+		background: #373737;
+  		color: #FFD700;
+  		z-index: 2;
+  		box-shadow:  0 1px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 #FFD700;
+	}
+	.tab_container {
+		border: 1px solid #999999;
+		border-top: none;
+		clear: both;
+		float: left; 
+		width: 100%;
+		background: #9099A2;
+	}
+
+	.tab_content {
+		padding: 0px;
+		display: none;
+
+	}
+ 
+ /* Content */
+
+/*!!Default Page CSS!!*/
+#footer   {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #373737;
+	color: #FFD700;
+	font-family: 'Shadows Into Light', cursive;
+	padding-top: 12px;
+}
+#footer h6 {
+	font-size: 1.7em;
+	user-select: none;
+}
+
+
+/*return to Top Button*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 90px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #373737; /* Set a background color */
+  color: #FFD700; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  user-select: none; /*Cannot be selected*/
+
+}
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+  color: #DAA520;
+}
+
+/*** Links ***/
+.tab_container a {
+	text-shadow: 1px 4px 6px #555;
+	color: #FFFFFF;
+	font-size: 1.1em;
+}
+
+/*.tab_container a:visited {
+	color: 	#F0E68C;
+}*/
+.tab_container a:hover {
+	color: #FFD700;
+}
+
+/*Headings with bar*/
+.tab_container h1 {
+	font-size: 3em;
+	letter-spacing: -2px;
+	border-bottom: 2px;
+	background-color: #373737;
+	color: #FFD700;
+    font-family: 'Shadows Into Light', cursive;
+    user-select: none;
+
+}
+.tab_container h1:hover {
+	color: #FFD700;
+	transition: 0.25s ease;
+	font-size: 3.3em;
+
+}
+
+/*Underlined Heading*/
+h3 {
+	font-family: 'Shadows Into Light', cursive;
+	color: #FFD700;
+	text-shadow: 0px 4px 6px #555;
+    text-decoration: underline;
+    user-select: none;
+}
+
+/*Normal Text*/
+.tab_container p {
+	font-size: 1.5em;
+	margin-left: 100px;
+	margin-right: 100px;
+	font-family: 'Indie Flower', cursive;
+
+}
+
+* {
+	text-align: center;
+
+}
+
+
+/*!!About Page!!*/
+.tab_container .Who>h3 {
+	font-size: 3em;
+}
+.tab_container .Who>p {
+	text-align: left;
+
+}
+/*My Picture*/
+#me {
+	float: left;
+	width: 230px;
+    height: auto;
+    transform: rotate(90deg);
+    margin: 25px;
+    border-radius: 47%;
+    border: solid 2px  #FFD700;
+    box-shadow: 0 0 0 3.5px #373737;
+    user-select: none;
+}
+#me:hover {
+	width: 260px;
+	height: auto;
+	transition: 0.5s ease-in-out;
+
+}
+
+/*!!Poem Page!!*/
+.poem {
+	column-width: 460px;
+	column-gap: 80px;
+    width: 90%;
+	max-width: 1100px;
+	margin: 50px auto;
+}
+
+div.poem figure {
+	background: #373737;
+	border: 2px solid #373737;
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	margin: 0 2px 15px;
+	padding: 10px;
+	transition: opacity .4s ease-in-out;
+    display: inline-block;
+  	max-width: 400px;
+
+}
+
+div.poem figure img {
+	width: 100%; height: auto;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+	max-width: 400px;
+}
+
+div.poem figure figcaption {
+    font-size: 1.2rem;
+	color:   #FFD700;
+    line-height: 1.5;
+	font-family: 'Indie Flower', cursive;
+}
+
+div.poem:hover figure:not(:hover) {
+	opacity: 0.55;
+
+}
+div.poem:hover figure:hover figcaption {
+	color: #FFD700;
+}
+
+
+/*!!Video Page!!*/
+.vid {
+	max-width: 600px;
+}
+
+div.vid figure video {
+	width: 100%; height: auto;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+	max-width: 900px;
+}
+
+div.vid figure figcaption {
+  font-size: 2rem;
+
+}
+/*Background images!*/
+/*Tab1*/
+
+.image {
+
+/*	background-image: url("images/hBackground.jpg!d");*/
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("images/hBackground.jpg!d");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	width: auto;
+
+}
+
+/*Webkit Rotation*/
+/*@-webkit-keyframes rotating {
+     from{
+        -webkit-transform: rotate(0deg);
+     }
+     to{
+        -webkit-transform: rotate(360deg);
+     }
+}
+*/
+
+#tab4 {
+	background-image: url("images/vBackground.jpg");
+	background-size: cover;
+}
+#tab6 {
+	background-image: url("images/vSpace.jpg");
+}
+
+/*!!Utilities!!*/
+/*Calculator*/
+
+
+/*Budget App*/
+
+
+
+/*home page (Some weird bug is causing blank spacing to appear above tabs when this section is placed further up*/ 
+
+/*Home Page Text*/
+.textSpace {
+	 user-select: none;
+    background-position: center;
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#name {
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 3.5em;
+	color: #FFD700;
+
+}
+
+#aspiring {
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.7em;
+	color: #FFD700;
+}
+
+/*Hire Me buton*/
+#contactBtn {
+    height: 40px;
+    width: 90px;
+    border-color: #FFD700;
+    background-color: #373737;
+    background-position: center;
+    color: #FFD700;
+    font-family: 'Shadows Into Light', cursive;
+    user-select: none;
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+#h5 {
+	font-size: 1.5em;
+}
+
+/*Hire Me button pop up text*/
+h4 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #9099A2;;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  user-select: none;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
